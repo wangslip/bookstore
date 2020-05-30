@@ -6,4 +6,7 @@
     <select id="findJdUser" resultType="cn.wangslip.bean.JdUser">
         SELECT * from jd_user where login_name = #{login_name} and password = #{password}
     </select>
+    <insert id="insertJdUser" parameterType="cn.wangslip.bean.JdUser">
+        insert into jd_user(login_name,password,email,recommender) values (#{login_name},#{password},#{email},#{recommender})
+    </insert>
 </mapper>

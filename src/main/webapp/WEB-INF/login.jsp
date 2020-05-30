@@ -57,7 +57,7 @@
 				<div class="guide_content">
                 	现在免费注册成为京东商城用户，便能立刻享受便宜又放心的购物乐趣。
                 </div>
-                <div id="new_register"><a href="register.jsp"><img src="images/new_reg.jpeg" /></div>
+                <div id="new_register"><a href="/toRegister"><img src="images/new_reg.jpeg" /></a></div>
 				<!--<div id="other_register"><a href="#">企业用户注册</a>   <a href="#">校园用户注册</a></div>-->
             </div>
         </div>

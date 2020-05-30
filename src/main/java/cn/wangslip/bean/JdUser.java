@@ -33,6 +33,7 @@ public class JdUser implements Serializable {
     private String last_login_ip;
     private String area;
     private String head_pic;
+    private String checkcode;
 
     public int getUser_id() {
         return user_id;
@@ -266,7 +267,15 @@ public class JdUser implements Serializable {
         this.head_pic = head_pic;
     }
 
-    public JdUser(int user_id, String login_name, String nick_name, String real_name, int grade_id, String password, String email, String province, String recommender, String sex, Timestamp birth, String location, String school, String company, String card_int, String mobile, String phone, String msn, String qq, String website, String send_address, String zipcode, String hobby, String verify_flag, String verify_code, Timestamp last_login_time, String last_login_ip, String area, String head_pic) {
+    public String getCheckcode() {
+        return checkcode;
+    }
+
+    public void setCheckcode(String checkcode) {
+        this.checkcode = checkcode;
+    }
+
+    public JdUser(int user_id, String login_name, String nick_name, String real_name, int grade_id, String password, String email, String province, String recommender, String sex, Timestamp birth, String location, String school, String company, String card_int, String mobile, String phone, String msn, String qq, String website, String send_address, String zipcode, String hobby, String verify_flag, String verify_code, Timestamp last_login_time, String last_login_ip, String area, String head_pic, String checkcode) {
         this.user_id = user_id;
         this.login_name = login_name;
         this.nick_name = nick_name;
@@ -296,6 +305,7 @@ public class JdUser implements Serializable {
         this.last_login_ip = last_login_ip;
         this.area = area;
         this.head_pic = head_pic;
+        this.checkcode = checkcode;
     }
 
     public JdUser() {
@@ -333,6 +343,7 @@ public class JdUser implements Serializable {
                 ", last_login_ip='" + last_login_ip + '\'' +
                 ", area='" + area + '\'' +
                 ", head_pic='" + head_pic + '\'' +
+                ", checkcode='" + checkcode + '\'' +
                 '}';
     }
 }
